@@ -113,8 +113,8 @@
             "state": {
               "type": "calendar",
               "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin non più attivo"
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
             }
           },
           {
@@ -220,8 +220,8 @@
             "state": {
               "type": "review-queue-list-view",
               "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin non più attivo"
+              "icon": "SpacedRepIcon",
+              "title": "Coda di note da rivedere"
             }
           },
           {
@@ -230,8 +230,8 @@
             "state": {
               "type": "copilot-chat-view",
               "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin non più attivo"
+              "icon": "message-square",
+              "title": "Copilot"
             }
           },
           {
@@ -245,7 +245,7 @@
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 8
       }
     ],
     "direction": "horizontal",
