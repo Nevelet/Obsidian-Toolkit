@@ -1,0 +1,13 @@
+{
+	"nodes":[
+		{"role":"user","displayOverride":true,"id":"6be27b4d15e11b48","type":"text","text":"Cos'è la Parmigiana?","x":-419,"y":-189,"width":259,"height":109},
+		{"id":"725ee4db5a84cf1e","type":"text","text":"La Parmigiana è un piatto tradizionale della cucina italiana, in particolare del Sud Italia, a base di melanzane fritte (o grigliate), passata di pomodoro, mozzarella (o fior di latte), Parmigiano Reggiano grattugiato e basilico.\n\nSi prepara alternando strati di melanzane, sugo di pomodoro, mozzarella e parmigiano, terminando con uno strato di formaggio. Il tutto viene poi infornato fino a doratura e fusione del formaggio.\n\nEsistono diverse varianti regionali, che possono prevedere l'uso di altri formaggi come la provola, o l'aggiunta di uova sode o prosciutto cotto tra gli strati.\n\nLa parmigiana è un piatto ricco, saporito e molto apprezzato, spesso servito come contorno o come piatto unico.\n","role":"assistant","displayOverride":true,"x":40,"y":-220,"width":510,"height":520},
+		{"id":"26dfb45f17a77689","type":"text","text":"Fammi una sintesi e aggiungi emoji","role":"user","displayOverride":true,"x":750,"y":-220,"width":400,"height":140},
+		{"id":"e5b60e081a197fda","type":"text","text":"Ecco una sintesi della Parmigiana con emoji:\n\nLa Parmigiana 🍆🍅🧀 è un piatto italiano 🇮🇹 a base di melanzane 🍆 fritte/grigliate, passata di pomodoro 🍅, mozzarella 🧀 e Parmigiano Reggiano grattugiato. Si prepara a strati e si inforna ♨️ fino a doratura.  Esistono varianti regionali! Un piatto ricco e saporito!😋\n","role":"assistant","displayOverride":true,"x":1380,"y":-220,"width":510,"height":290}
+	],
+	"edges":[
+		{"id":"f5786bd42aad5c4f","fromNode":"6be27b4d15e11b48","fromSide":"right","toNode":"725ee4db5a84cf1e","toSide":"left"},
+		{"id":"63477e977fcb98d2","fromNode":"725ee4db5a84cf1e","fromSide":"right","toNode":"26dfb45f17a77689","toSide":"left"},
+		{"id":"33203188e2cd5f14","fromNode":"26dfb45f17a77689","fromSide":"right","toNode":"e5b60e081a197fda","toSide":"left"}
+	]
+}

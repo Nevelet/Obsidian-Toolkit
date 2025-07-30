@@ -1,0 +1,14 @@
+{
+  "types": {
+    "aliases": "aliases",
+    "cssclasses": "multitext",
+    "tags": "tags",
+    "categorie": "multitext",
+    "creazione": "date",
+    "scadenza": "date",
+    "pagine-lette": "number",
+    "pagine": "number",
+    "autore": "multitext",
+    "voto-personale": "number"
+  }
+}

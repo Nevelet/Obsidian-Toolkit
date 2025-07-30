@@ -1,0 +1,323 @@
+{
+  "main": {
+    "id": "0a310274aca22aa7",
+    "type": "split",
+    "children": [
+      {
+        "id": "080759e3228d31fc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b10772513d08bd6e",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              },
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "README"
+            }
+          },
+          {
+            "id": "e1436fc4e1743d0e",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "HOME.md",
+                "mode": "preview",
+                "source": false
+              },
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "HOME"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "7b884cf0d62be68b",
+    "type": "split",
+    "children": [
+      {
+        "id": "11779c26fab82253",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f8ad91b628957345",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Esplora risorse"
+            }
+          },
+          {
+            "id": "4227d796ad27b4b5",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Ricerca"
+            }
+          },
+          {
+            "id": "ccdb81276910464a",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Segnalibri"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 263.5019836425781,
+    "collapsed": true
+  },
+  "right": {
+    "id": "56c7a25b0828f2d7",
+    "type": "split",
+    "children": [
+      {
+        "id": "3cece649f8e02114",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "88ddc61cd64a1244",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin non più attivo"
+            }
+          },
+          {
+            "id": "2f30376cbc0e9c8c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "HOME.md",
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Riferimenti a HOME"
+            }
+          },
+          {
+            "id": "e95e742c4e51ecde",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Collegamenti in uscita"
+            }
+          },
+          {
+            "id": "2c25fd05ae0031ae",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Etichette"
+            }
+          },
+          {
+            "id": "1bf918479eb885eb",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "Tutte le proprietà"
+            }
+          },
+          {
+            "id": "9869be64c836e90b",
+            "type": "leaf",
+            "state": {
+              "type": "file-properties",
+              "state": {
+                "file": "HOME.md"
+              },
+              "icon": "lucide-info",
+              "title": "Proprietà file per HOME"
+            }
+          },
+          {
+            "id": "4c10580f98570d5d",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Struttura"
+            }
+          },
+          {
+            "id": "4b61f0a1d8c29492",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
+              "icon": "SpacedRepIcon",
+              "title": "Coda di note da rivedere"
+            }
+          },
+          {
+            "id": "d5a3996b0489d364",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin non più attivo"
+            }
+          },
+          {
+            "id": "ceeaa21d798f8f84",
+            "type": "leaf",
+            "state": {
+              "type": "copilot-chat-view",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin non più attivo"
+            }
+          },
+          {
+            "id": "b04299180869259c",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
+              "icon": "SpacedRepIcon",
+              "title": "Coda di note da rivedere"
+            }
+          }
+        ],
+        "currentTab": 7
+      }
+    ],
+    "direction": "horizontal",
+    "width": 579.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Apri selezione rapida": true,
+      "command-palette:Apri riquadro comandi": false,
+      "graph:Apri vista grafo": false,
+      "canvas:Crea nuova lavagna": false,
+      "daily-notes:Apri nota del giorno": false,
+      "templates:Inserisci modello": false,
+      "obsidian-excalidraw-plugin:New drawing": false,
+      "pdf-plus:PDF++: Toggle auto-copy": true,
+      "pdf-plus:PDF++: Toggle auto-focus": true,
+      "pdf-plus:PDF++: Toggle auto-paste": true,
+      "obsidian-spaced-repetition:Rivisita schede": false,
+      "obsidian-statusbar-pomo:Start pomodoro": false,
+      "soundscapes:Soundscapes: My Music": true,
+      "copilot:Open Copilot Chat": false,
+      "caret:Caret Chat": true
+    }
+  },
+  "active": "b10772513d08bd6e",
+  "lastOpenFiles": [
+    "HOME.md",
+    "README.md",
+    "Journal/2025-07-30.md",
+    "Risorse/Templates/Progetti (Template).md",
+    "Risorse/Templates/Note (Template).md",
+    "Risorse/Templates/Journal (Template).md",
+    "Risorse/Templates/Fonti (Template).md",
+    "Risorse/Templates/Categorie (Template).md",
+    "Risorse/Excalidraw/Drawing 2025-07-28 12.48.04.excalidraw.md",
+    "Note/Parmigiana.md",
+    "Risorse/Excalidraw/Drawing 2025-07-04 22.08.40.excalidraw.md",
+    "Risorse/Copilot/copilot-conversations/Ciao,_come_va@20250728_125726.md",
+    "Risorse/Copilot/copilot-conversations/Genera_una_serie_di_flashcard_di_questa_nota_{activeNote}_in@20250704_170633.md",
+    "Risorse/Canvas/Parmigiana (Canvas).canvas",
+    "Risorse/Allegati/leone-venter-VieM9BdZKFo-unsplash.jpg",
+    "Risorse/Allegati/markus-winkler-Q2J2qQsoYH8-unsplash.jpg",
+    "Risorse/Allegati/tom-hermans-9BoqXzEeQqM-unsplash.jpg",
+    "Risorse/Allegati/Leggere per sapere 2 1 WEB- Ale - Alessandro de Concini.pdf",
+    "Risorse/Allegati/book cover.png",
+    "Progetti/Progetto 1.md",
+    "Inbox/Formaggio.md",
+    "Inbox/Uova.md",
+    "Note/Zettelkasten.md",
+    "Note/Come APPLICARE DAVVERO LE COSE (+ Template Gratuito).md",
+    "Note/Obsidian - Plugin di terze parti.md",
+    "Note/Obsidian - Plugin principali.md",
+    "Note/Copilot (Plugin).md",
+    "Note/Come cucinare la Parmigiana.md",
+    "Note/Caret (Plugin).md",
+    "Note/Text Generator (Plugin).md",
+    "Note/Tasti Rapidi Personalizzati di Obsidian.md",
+    "Note/Obsidian - Canvas (Plugin).md",
+    "Risorse/Canvas/La parmigiana (Canvas).canvas",
+    "cover.jpg",
+    "Senza nome.canvas",
+    "Senza nome 1.canvas",
+    "Risorse/Canvas",
+    "Inbox",
+    "Progetti",
+    "1. Projects",
+    "Risorse",
+    "Risorse/Excalidraw",
+    "Allegati/Senza nome.canvas",
+    "Risorse/Caret/chats",
+    "Risorse/Caret",
+    "Risorse/Copilot/copilot-conversations"
+  ]
+}

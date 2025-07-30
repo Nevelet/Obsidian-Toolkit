@@ -1,0 +1,82 @@
+{
+  "settings": {
+    "migrated": 6,
+    "iconPacksPath": ".obsidian/icons",
+    "fontSize": 16,
+    "emojiStyle": "native",
+    "iconColor": null,
+    "recentlyUsedIcons": [
+      "LiTriangleAlert",
+      "LiCreateGroup",
+      "LiBook",
+      "LiHome",
+      "LiPalette"
+    ],
+    "recentlyUsedIconsSize": 5,
+    "rules": [
+      {
+        "rule": "Note",
+        "icon": "LiNotepadText",
+        "for": "everything",
+        "order": 0,
+        "useFilePath": true
+      },
+      {
+        "rule": "Journal",
+        "icon": "LiCalendar",
+        "for": "everything",
+        "order": 1,
+        "useFilePath": true
+      },
+      {
+        "rule": "Fonti",
+        "icon": "LiBook",
+        "for": "everything",
+        "order": 2,
+        "useFilePath": true
+      },
+      {
+        "rule": "Categorie",
+        "icon": "LiCreateGroup",
+        "for": "everything",
+        "order": 3,
+        "useFilePath": true
+      },
+      {
+        "rule": "Progetti",
+        "icon": "LiListCheck",
+        "for": "everything",
+        "order": 4,
+        "useFilePath": true
+      }
+    ],
+    "extraMargin": {
+      "top": 0,
+      "right": 4,
+      "bottom": 0,
+      "left": 0
+    },
+    "iconInTabsEnabled": false,
+    "iconInTitleEnabled": false,
+    "iconInTitlePosition": "above",
+    "iconInFrontmatterEnabled": false,
+    "iconInFrontmatterFieldName": "icon",
+    "iconColorInFrontmatterFieldName": "iconColor",
+    "iconsBackgroundCheckEnabled": false,
+    "iconsInNotesEnabled": true,
+    "iconsInLinksEnabled": true,
+    "iconIdentifier": ":",
+    "lucideIconPackType": "native",
+    "debugMode": false,
+    "useInternalPlugins": false
+  },
+  "Categorie": "LiCreateGroup",
+  "Fonti": "LiBook",
+  "Inbox": "LiInbox",
+  "Journal": "LiCalendar",
+  "Note": "LiNotepadText",
+  "Progetti": "LiListCheck",
+  "Risorse": "LiPalette",
+  "HOME.md": "LiHome",
+  "README.md": "LiTriangleAlert"
+}

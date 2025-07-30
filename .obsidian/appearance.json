@@ -1,0 +1,13 @@
+{
+  "theme": "moonstone",
+  "baseFontSize": 17,
+  "cssTheme": "",
+  "baseFontSizeAction": true,
+  "enabledCssSnippets": [
+    "wide page",
+    "cards",
+    "dataview nowrap",
+    "MCL Multi Column",
+    "colors"
+  ]
+}

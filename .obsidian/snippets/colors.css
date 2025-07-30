@@ -1,0 +1,113 @@
+/* Definizione del colore per tema chiaro e scuro */
+
+.theme-light /* Colori per il tema chiaro */ {
+	--h1-color: red;
+	--h2-color: #ff5555;
+	--h3-color: #F49145;
+    --h4-color: #ff79c6; 
+	--h5-color: #94F434;
+	--h6-color: #bd93f9;
+	--italics-color: #ff8d0f;
+	--bold-color: #104000;
+	
+	/* Colori sfondo */
+    --background-primary: #ffefbf;
+	--background-secondary-alt: #fffaea;
+    --background-secondary: #fffaea;
+    --text-normal: #333333;
+    --interactive-accent: #d56a00;
+	--interactive-normal: #ffffff;	
+	--bg1: #fff2cc; /* Barra applicazione per Minimal Theme */
+	--bg2: #fff2cc; /* Barra ribbon per Minimal Theme */
+	
+}
+
+.theme-dark /* Colori per il tema scuro */ {
+	--h1-color: red;
+	--h2-color: #ff5555;
+	--h3-color: #F49145;
+    --h4-color: #ff79c6; 
+	--h5-color: #94F434;
+	--h6-color: #bd93f9;
+	--italics-color: #ffb86c;
+	--bold-color: #94F434;
+	
+	/* Colori sfondo */
+   /* --background-primary: #11181a; */
+    --background-secondary: #1f1f1f;
+    --text-normal: #e0e0e0;
+    --interactive-accent: #ff4500;
+	
+}
+
+
+
+/* Italics */
+.cm-em, em {
+    color: var(--italics-color) !important;
+}
+
+/* Bold */
+.cm-strong, strong {
+    color: var(--bold-color) !important;
+}
+
+/* headings for editor and preview */
+.cm-header-1, .markdown-preview-view h1
+{  
+	color: var(--h1-color) !important;
+}
+
+.cm-header-2, .markdown-preview-view h2
+{  
+	color: var(--h2-color) !important;
+}
+
+.cm-header-3, .markdown-preview-view h3
+{
+    color: var(--h3-color) !important;
+}
+
+.cm-header-4, .markdown-preview-view h4 {
+    color: var(--h4-color) !important;
+}
+
+.cm-header-5, .markdown-preview-view h5
+{
+	color: var(--h5-color) !important;
+}
+
+.cm-header-6, .markdown-preview-view h6
+{   
+	color: var(--h6-color) !important;
+}
+
+
+
+
+
+/* Heading Color Background */
+/* 
+.cm-s-obsidian .HyperMD-header-2,
+  .markdown-preview-view h2 ul
+   {
+    background-color: hsla(290, 20%, 30%, 1);
+    width: 100%;
+    padding: 10px;
+    margin-top: 40px;
+	color: white;
+  }
+  
+.cm-s-obsidian .HyperMD-header-3,
+  .markdown-preview-view h3 ul
+   {
+    background-color: hsla(50, 10%, 90%, 1);
+    width: 100%;
+    padding: 10px;
+    margin-top: 40px;
+	color: black;
+  }
+
+ */
+
+
