@@ -11,6 +11,7 @@ Qui trovate il mio [canale YouTube](https://www.youtube.com/@GiambattistaCiancio
 > **Per questo Vault ho usato questi plugin:**
 > - [Calendar](https://youtu.be/CjVbhDReFSY?si=Vi44HkQLl8zxXWGC) (per le note giornaliere)
 > - [Dataview](https://youtu.be/GH2vo9lVOg4?si=G8lUt6yPzBqJv44Z) (per creare tabelle filtrate)
+> - [Bases](https://youtu.be/D5GCovyR2DM?si=AQ2z9zUZR-7NaKg6) (per creare database)
 > - [Spaced Repetition](https://youtu.be/ZScSMcsHJ_w?si=4k1OgaH3Ivz1Rk8p) (per flashcard)
 > - [Markmind](https://youtu.be/LgfClbCgYMI?si=G4Vbn0H2x3stS9Hm) (per mappe mentali)
 > - [Excalidraw](https://youtu.be/lN5tQoBd930?si=ntEVVcq6Zd-O8qD2) (per disegnare)

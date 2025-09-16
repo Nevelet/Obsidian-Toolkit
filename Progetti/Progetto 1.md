@@ -4,7 +4,8 @@ scadenza: 2025-08-14
 tags:
   - project
 stato: Attivo
-priorità:
+priorità: Alta
+progresso: 20
 ---
 [[Progetti]]
 

@@ -1,0 +1,117 @@
+filters:
+  and:
+    - file.hasTag("source")
+    - '!file.path.contains("Templates")'
+    - tipo.contains("Libro")
+formulas:
+  Progresso: |-
+    "▰".repeat ((
+    number(note["pagine-lette"])
+    ) 
+    / pagine * 10) + "▱▱▱▱▱▱▱▱▱▱".slice( 0, 10 - ((
+    number(note["pagine-lette"])
+    ) 
+    / pagine * 10).floor()).toString()
+  Rating: |
+    if(note["voto-personale"] > 0 && note["voto-personale"] <= 5, "🌕".repeat(note["voto-personale"].floor()) + if(note["voto-personale"] % 1 == 0.5, "🌗"))
+properties:
+  note.stato:
+    displayName: Stato
+  note.autore:
+    displayName: Autore
+  note.voto-personale:
+    displayName: Voto Personale
+  note.pagine:
+    displayName: Pagine totali
+  note.pagine-lette:
+    displayName: Pagine lette
+  note.start:
+    displayName: Data inizio
+  file.name:
+    displayName: Libri
+views:
+  - type: cards
+    name: Tutti
+    filters:
+      and:
+        - if(this.search, file.name.contains(this.search), file.name)
+    order:
+      - file.name
+      - formula.Progresso
+      - autore
+      - pagine
+      - pagine-lette
+      - stato
+      - voto-personale
+    sort: []
+    columnSize:
+      note.rating: 127
+      note.read: 115
+    image: note.image
+    cardSize: 200
+    imageAspectRatio: 1.6
+    imageFit: ""
+  - type: table
+    name: Tutti (Table)
+    order:
+      - file.name
+      - stato
+      - autore
+      - pagine-lette
+      - pagine
+      - formula.Progresso
+      - voto-personale
+      - formula.Rating
+    sort:
+      - property: stato
+        direction: ASC
+      - property: formula.Untitled
+        direction: ASC
+    columnSize:
+      file.name: 150
+      note.stato: 96
+      note.autore: 180
+      note.pagine: 139
+      formula.Progresso: 190
+      note.voto-personale: 130
+    image: note.image
+    cardSize: 200
+    imageAspectRatio: 1.5
+  - type: table
+    name: Da leggere
+    filters:
+      and:
+        - stato == "Attivo"
+    order:
+      - file.name
+      - pagine
+      - pagine-lette
+      - formula.Progresso
+      - autore
+      - stato
+    sort: []
+    columnSize:
+      note.rating: 127
+      note.read: 115
+    image: note.image
+    cardSize: 200
+    imageAspectRatio: 1.5
+  - type: table
+    name: Letti
+    filters:
+      and:
+        - stato.containsAny("Letto")
+        - if(this.search, file.name.contains(this.search), file.name)
+    order:
+      - file.name
+      - formula.Progresso
+      - autore
+      - formula.Rating
+    sort: []
+    columnSize:
+      file.name: 192
+      formula.Progresso: 190
+      note.autore: 180
+    image: note.image
+    cardSize: 200
+    imageAspectRatio: 1.5

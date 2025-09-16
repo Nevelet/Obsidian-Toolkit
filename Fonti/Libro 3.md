@@ -1,14 +1,20 @@
 ---
-creazione: {{date}}
+creazione: 2025-09-04
 tags:
   - source
-tipo:
+tipo: Libro
 url:
 categorie:
-stato:
+stato: Letto
 autore:
-image: 
+  - "[[Tiago Forte]]"
+image: "[[book cover.png]]"
+pagine: 250
+pagine-lette: 250
+voto-personale: 5
 ---
+[[Libri (Base).base]]
+
 ## 📝 Appunti
 
 - 

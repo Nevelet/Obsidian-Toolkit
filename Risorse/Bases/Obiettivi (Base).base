@@ -1,0 +1,47 @@
+filters:
+  and:
+    - file.hasTag("goal")
+    - '!file.path.contains("Templates")'
+formulas:
+  Progress: |-
+    "▰".repeat ((
+    number(note["corrente"])
+    ) 
+    / target * 10) + "▱▱▱▱▱▱▱▱▱▱".slice( 0, 10 - ((
+    number(note["corrente"])
+    ) 
+    / target * 10).floor()).toString()
+
+    + " " +
+    (number(note["corrente"]) / target * 100).floor() + "%"
+properties:
+  file.name:
+    displayName: Obiettivi
+  note.corrente:
+    displayName: Corrente
+  note.target:
+    displayName: Target
+views:
+  - type: cards
+    name: Tutti (Cards)
+    order:
+      - file.name
+      - corrente
+      - target
+      - formula.Progress
+    sort: []
+    columnSize:
+      file.name: 163
+      note.target: 107
+    image: note.image
+  - type: table
+    name: Tutti
+    order:
+      - file.name
+      - corrente
+      - target
+      - formula.Progress
+    sort: []
+    columnSize:
+      file.name: 156
+      note.target: 112

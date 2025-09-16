@@ -9,6 +9,15 @@
     "pagine-lette": "number",
     "pagine": "number",
     "autore": "multitext",
-    "voto-personale": "number"
+    "voto-personale": "number",
+    "target": "number",
+    "corrente": "number",
+    "scrittura": "checkbox",
+    "studio": "checkbox",
+    "progresso": "number",
+    "Meditazione": "checkbox",
+    "soldi spesi": "number",
+    "esercizi": "checkbox",
+    "lettura": "checkbox"
   }
 }

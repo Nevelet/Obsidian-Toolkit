@@ -9,8 +9,10 @@ anno: "2022"
 autore:
   - "[[Giambattista Ciancio]]"
 pagine: 300
-pagine-lette: 140
-voto-personale: 3
-cover: 
+pagine-lette: 150
+voto-personale: 3.5
 note: Interessante i concetti di questo libro
+image: "[[book cover.png]]"
 ---
+[[Libri (Base).base]]
+

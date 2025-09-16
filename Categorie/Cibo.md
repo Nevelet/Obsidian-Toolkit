@@ -5,9 +5,23 @@ tags:
 
 
 
-```dataview
-TABLE
-FROM [[]] and !outgoing([[]])
-WHERE !contains(file.path, "templates")
-SORT created desc
+
+```base
+filters:
+  and:
+    - '!file.path.contains("Templates")'
+views:
+  - type: table
+    name: Backlinks
+    filters:
+      and:
+        - file.hasLink(this.file)
+        - "!file.backlinks.contains(this)"
+    order:
+      - file.name
+      - file.tags
+      - creazione
+    columnSize:
+      file.name: 329
+
 ```

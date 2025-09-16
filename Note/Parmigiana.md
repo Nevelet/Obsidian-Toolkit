@@ -7,8 +7,28 @@ categorie:
   - "[[Cibo]]"
 ---
 
+
 La **parmigiana di melanzane** è uno dei piatti più noti della cucina italiana ma la sua origine è **contesa tra tre regioni**, la Sicilia, la Campania e l’Emilia-Romagna. La ricetta della parmigiana è oggi diffusa con diverse varianti in tutte le regioni d’Italia, rendendo ancora più difficile tracciarne la sua vera origine.
 
+```base
+filters:
+  and:
+    - '!file.path.contains("Templates")'
+views:
+  - type: table
+    name: Backlinks
+    filters:
+      and:
+        - file.hasLink(this.file)
+        - "!file.backlinks.contains(this)"
+    order:
+      - file.name
+      - file.tags
+      - creazione
+    columnSize:
+      file.name: 329
+
+```
 
 ## L’origine del nome “Parmigiana”
 

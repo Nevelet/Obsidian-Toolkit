@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "080759e3228d31fc",
+        "id": "ae431e8428935e83",
         "type": "tabs",
         "children": [
           {
-            "id": "b10772513d08bd6e",
+            "id": "f322a91c5bb0f2a9",
             "type": "leaf",
             "pinned": true,
             "state": {
@@ -24,14 +24,14 @@
             }
           },
           {
-            "id": "e1436fc4e1743d0e",
+            "id": "2ca36c2bfb2ee2a9",
             "type": "leaf",
             "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
                 "file": "HOME.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": false
               },
               "pinned": true,
@@ -96,7 +96,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 263.5019836425781,
+    "width": 229.50198364257812,
     "collapsed": true
   },
   "right": {
@@ -118,22 +118,35 @@
             }
           },
           {
+            "id": "df85d1a7dbc56122",
+            "type": "leaf",
+            "state": {
+              "type": "bases",
+              "state": {
+                "file": "Risorse/Bases/Note (Base).base",
+                "viewName": "Backlinks (NO outgoing)"
+              },
+              "icon": "lucide-table",
+              "title": "Note (Base)"
+            }
+          },
+          {
             "id": "2f30376cbc0e9c8c",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "HOME.md",
+                "file": "Risorse/Templates/Progetti (Template).md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
-                "showSearch": false,
+                "showSearch": true,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Riferimenti a HOME"
+              "title": "Riferimenti a Progetti (Template)"
             }
           },
           {
@@ -142,11 +155,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Risorse/Templates/Progetti (Template).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Collegamenti in uscita"
+              "title": "Collegamenti in uscita da Progetti (Template)"
             }
           },
           {
@@ -171,7 +185,7 @@
               "type": "all-properties",
               "state": {
                 "sortOrder": "frequency",
-                "showSearch": false,
+                "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-archive",
@@ -184,10 +198,10 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "HOME.md"
+                "file": "Risorse/Templates/Progetti (Template).md"
               },
               "icon": "lucide-info",
-              "title": "Proprietà file per HOME"
+              "title": "Proprietà file per Progetti (Template)"
             }
           },
           {
@@ -215,16 +229,6 @@
             }
           },
           {
-            "id": "d5a3996b0489d364",
-            "type": "leaf",
-            "state": {
-              "type": "review-queue-list-view",
-              "state": {},
-              "icon": "SpacedRepIcon",
-              "title": "Coda di note da rivedere"
-            }
-          },
-          {
             "id": "ceeaa21d798f8f84",
             "type": "leaf",
             "state": {
@@ -233,27 +237,18 @@
               "icon": "message-square",
               "title": "Copilot"
             }
-          },
-          {
-            "id": "b04299180869259c",
-            "type": "leaf",
-            "state": {
-              "type": "review-queue-list-view",
-              "state": {},
-              "icon": "SpacedRepIcon",
-              "title": "Coda di note da rivedere"
-            }
           }
         ],
         "currentTab": 8
       }
     ],
     "direction": "horizontal",
-    "width": 579.5,
+    "width": 522.5,
     "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
       "switcher:Apri selezione rapida": true,
       "command-palette:Apri riquadro comandi": false,
       "graph:Apri vista grafo": false,
@@ -271,53 +266,53 @@
       "caret:Caret Chat": true
     }
   },
-  "active": "b10772513d08bd6e",
+  "active": "f322a91c5bb0f2a9",
   "lastOpenFiles": [
     "HOME.md",
+    "Risorse/Bases/Obiettivi (Base).base",
     "README.md",
-    "Journal/2025-07-30.md",
-    "Risorse/Templates/Progetti (Template).md",
-    "Risorse/Templates/Note (Template).md",
-    "Risorse/Templates/Journal (Template).md",
-    "Risorse/Templates/Fonti (Template).md",
-    "Risorse/Templates/Categorie (Template).md",
-    "Risorse/Excalidraw/Drawing 2025-07-28 12.48.04.excalidraw.md",
-    "Note/Parmigiana.md",
-    "Risorse/Excalidraw/Drawing 2025-07-04 22.08.40.excalidraw.md",
-    "Risorse/Copilot/copilot-conversations/Ciao,_come_va@20250728_125726.md",
-    "Risorse/Copilot/copilot-conversations/Genera_una_serie_di_flashcard_di_questa_nota_{activeNote}_in@20250704_170633.md",
-    "Risorse/Canvas/Parmigiana (Canvas).canvas",
-    "Risorse/Allegati/leone-venter-VieM9BdZKFo-unsplash.jpg",
-    "Risorse/Allegati/markus-winkler-Q2J2qQsoYH8-unsplash.jpg",
-    "Risorse/Allegati/tom-hermans-9BoqXzEeQqM-unsplash.jpg",
-    "Risorse/Allegati/Leggere per sapere 2 1 WEB- Ale - Alessandro de Concini.pdf",
-    "Risorse/Allegati/book cover.png",
+    "Risorse/Bases/Note (Base).base",
+    "Risorse/Bases/Progetti (Base).base",
+    "Risorse/Bases/Libri (Base).base",
+    "Risorse/Bases/Habit tracker (Base).base",
+    "Categorie/Cibo.md",
+    "Journal/2025-09-15.md",
+    "Progetti/Progetto 3.md",
+    "Progetti/Progetto 2.md",
     "Progetti/Progetto 1.md",
-    "Inbox/Formaggio.md",
+    "Journal/2025-07-08.md",
+    "Journal/2025-06-11.md",
+    "Journal/2025-06-03.md",
     "Inbox/Uova.md",
-    "Note/Zettelkasten.md",
-    "Note/Come APPLICARE DAVVERO LE COSE (+ Template Gratuito).md",
-    "Note/Obsidian - Plugin di terze parti.md",
-    "Note/Obsidian - Plugin principali.md",
-    "Note/Copilot (Plugin).md",
-    "Note/Come cucinare la Parmigiana.md",
-    "Note/Caret (Plugin).md",
-    "Note/Text Generator (Plugin).md",
-    "Note/Tasti Rapidi Personalizzati di Obsidian.md",
-    "Note/Obsidian - Canvas (Plugin).md",
+    "Inbox/Salsa di pomodoro.md",
+    "Inbox/Obiettivo 3.md",
+    "Inbox/Obiettivo 2.md",
+    "Inbox/Obiettivo 1.md",
+    "Inbox/Melanzana.md",
+    "Inbox/Formaggio.md",
+    "Fonti/Libro 3.md",
+    "Fonti/Libro 2.md",
+    "Fonti/Libro 1.md",
+    "Fonti/Corso Obsidian.md",
+    "Categorie/Obiettivi.md",
+    "Categorie/Obsidian.md",
+    "Categorie/Progetti.md",
+    "Categorie/Libri.md",
+    "Risorse/Canvas/Parmigiana (Canvas).canvas",
+    "Risorse/Allegati/tom-hermans-9BoqXzEeQqM-unsplash.jpg",
+    "Risorse/Allegati/markus-winkler-Q2J2qQsoYH8-unsplash.jpg",
+    "Risorse/Allegati/leone-venter-VieM9BdZKFo-unsplash.jpg",
+    "Risorse/Allegati/Goal (orange).png",
+    "Risorse/Allegati/book cover.png",
+    "Risorse/Bases/Habit tracker (Base) 1.base",
+    "Risorse/Bases (backup)/Progetti (Base).base",
+    "Risorse/Bases (backup)/Obiettivi (Base).base",
+    "Risorse/Bases (backup)/Note (Base).base",
+    "Risorse/Bases (backup)/Libri (Base).base",
     "Risorse/Canvas/La parmigiana (Canvas).canvas",
     "cover.jpg",
     "Senza nome.canvas",
     "Senza nome 1.canvas",
-    "Risorse/Canvas",
-    "Inbox",
-    "Progetti",
-    "1. Projects",
-    "Risorse",
-    "Risorse/Excalidraw",
-    "Allegati/Senza nome.canvas",
-    "Risorse/Caret/chats",
-    "Risorse/Caret",
-    "Risorse/Copilot/copilot-conversations"
+    "Allegati/Senza nome.canvas"
   ]
 }

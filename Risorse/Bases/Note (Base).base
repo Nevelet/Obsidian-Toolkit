@@ -1,0 +1,169 @@
+filters:
+  and:
+    - and:
+        - '!file.folder.contains("Templates")'
+        - file.ext.contains("md")
+formulas:
+  Rimanenti: date(creazione).relative()
+  test date: ""
+properties:
+  note.categorie:
+    displayName: Categorie
+  note.creazione:
+    displayName: Creazione
+  note.stato:
+    displayName: Stato
+  file.tags:
+    displayName: Tags
+  file.name:
+    displayName: Note
+views:
+  - type: table
+    name: Inbox
+    filters:
+      and:
+        - file.inFolder("Inbox")
+    order:
+      - file.name
+      - file.tags
+      - stato
+      - categorie
+      - creazione
+      - formula.Rimanenti
+    sort:
+      - property: creazione
+        direction: ASC
+    columnSize:
+      file.tags: 125
+      note.stato: 105
+      note.categorie: 154
+  - type: table
+    name: Notes
+    filters:
+      and:
+        - file.path.contains("Note")
+    order:
+      - file.name
+      - file.tags
+      - stato
+      - categorie
+      - creazione
+      - formula.Rimanenti
+    sort: []
+    columnSize:
+      file.name: 355
+      file.tags: 124
+      note.stato: 105
+      note.categorie: 107
+  - type: table
+    name: No tags
+    filters:
+      and:
+        - "!file.tags"
+    order:
+      - file.name
+      - stato
+      - categorie
+      - creazione
+      - formula.Rimanenti
+    columnSize:
+      file.name: 386
+      note.stato: 105
+      note.categorie: 113
+  - type: table
+    name: Backlinks
+    filters:
+      and:
+        - file.hasLink(this.file)
+    order:
+      - file.name
+      - file.tags
+      - stato
+      - categorie
+      - creazione
+      - formula.Rimanenti
+    sort:
+      - property: creazione
+        direction: ASC
+    columnSize:
+      file.tags: 125
+      note.stato: 105
+      note.categorie: 102
+  - type: table
+    name: Backlinks (NO outgoing)
+    filters:
+      and:
+        - file.hasLink(this.file)
+        - "!file.backlinks.contains(this)"
+    order:
+      - file.name
+      - file.tags
+      - stato
+      - categorie
+      - creazione
+      - formula.Rimanenti
+    sort:
+      - property: creazione
+        direction: ASC
+    columnSize:
+      file.tags: 125
+      note.stato: 105
+      note.categorie: 102
+  - type: table
+    name: Ultime modificate
+    order:
+      - file.name
+      - file.tags
+      - stato
+      - categorie
+      - creazione
+      - formula.Rimanenti
+      - file.mtime
+    sort:
+      - property: file.mtime
+        direction: DESC
+    columnSize:
+      file.name: 331
+      file.tags: 127
+      note.stato: 105
+      note.categorie: 138
+      note.creazione: 132
+      formula.Rimanenti: 105
+  - type: table
+    name: Ultime 5 note create
+    order:
+      - file.name
+    sort:
+      - property: file.ctime
+        direction: DESC
+      - property: creazione
+        direction: DESC
+    limit: 5
+    columnSize:
+      file.name: 280
+      file.ctime: 158
+  - type: table
+    name: Ultime 5 note modificate
+    order:
+      - file.name
+    sort:
+      - property: file.mtime
+        direction: DESC
+    limit: 5
+    columnSize:
+      file.name: 155
+  - type: table
+    name: Note create oggi
+    filters:
+      and:
+        - or:
+            - file.ctime.format("YYYY-MM-DD") == now().format("YYYY-MM-DD")
+    order:
+      - file.name
+    sort:
+      - property: file.ctime
+        direction: DESC
+    limit: 10
+    columnSize:
+      file.name: 280
+      file.ctime: 149

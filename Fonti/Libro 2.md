@@ -11,6 +11,9 @@ autore:
 pagine: 252
 pagine-lette: 80
 voto-personale: 4
-cover: 
 note: Non male!
+image: "[[book cover.png]]"
 ---
+[[Libri (Base).base]]
+
+

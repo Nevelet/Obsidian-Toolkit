@@ -9,15 +9,26 @@ tags:
 
 
 **Ultime note create:**
-```dataview
-LIST
-WHERE
-	!contains(file.tags, "daily") and
-	contains(file.outlinks, this.file.link) or
-	contains(string(file.frontmatter), string(dateformat(this.file.day,"yyyy-MM-dd")))
-SORT file.ctime asc
-LIMIT 50
+```base
+filters:
+  and:
+    - "!file.name.contains(this.file.name)"
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - or:
+            - creazione == this.file.name
+            - file.ctime.format("YYYY-MM-DD") == this.file.name
+    order:
+      - file.name
+      - categorie
+      - file.tags
+    columnSize:
+      file.name: 165
 ```
+
 
 ## ✅ Cose da fare
 

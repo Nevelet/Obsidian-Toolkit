@@ -23,14 +23,13 @@ cssclasses:
 > [!multi-column]
 >
 >> ### **Ultime 5 note create**
->> `$= dv.list(dv.pages().sort(f => f.file.ctime.ts, "desc").limit(5).file.link)`
+>> ![[Note (Base).base#Ultime 5 note create]]
 >
 >> ### **Ultime 5 note modificate**
->> `$= dv.list(dv.pages().sort(f => f.file.mtime.ts, "desc").limit(5).file.link)`
+>> ![[Note (Base).base#Ultime 5 note modificate]]
 >
 >> ### **Note create oggi**
->> `$= const today = window.moment().startOf("day"); dv.list(dv.pages().filter(p => p.file.ctime >= today).sort(p => p.file.ctime, 'asc').limit(20).file.link) `
->
+>> ![[Note (Base).base#Note create oggi]]
 
 
 

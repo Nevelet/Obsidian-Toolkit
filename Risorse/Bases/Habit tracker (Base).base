@@ -1,0 +1,86 @@
+filters:
+  and:
+    - '!file.folder.contains("Templates")'
+formulas:
+  Giorno: file.asLink(date(file.name).format("DD dddd"))
+  Progress: |
+    "▰".repeat ((
+    number(studio) + 
+    number(esercizi) + 
+    number(lettura)
+    ) 
+    / 3 * 10) + "▱▱▱▱▱▱▱▱▱▱".slice( 0, 10 - ((
+    number(studio) + 
+    number(esercizi) + 
+    number(lettura)
+    ) 
+    / 3 * 10).floor()).toString()
+  Progress Weekly: file.name
+  Week Link: |-
+    link(
+    date(file.name).format("YYYY-[W]ww"), date(file.name).format("ww"))
+  Mesi: |-
+    link(
+    date(file.name).format("YYYY-MM"), date(file.name).format("MMMM"))
+  Anni: |-
+    link(
+    date(file.name).format("YYYY"), date(file.name).format("YYYY"))
+properties:
+  file.name:
+    displayName: Note
+  formula.Giorno:
+    displayName: Giorni
+  note.lettura:
+    displayName: 📚 Lettura
+  note.esercizi:
+    displayName: 💪 Esercizio
+  note.studio:
+    displayName: 👨‍🎓 Studio
+  formula.Week Link:
+    displayName: Settimane
+views:
+  - type: table
+    name: Daily Habits
+    filters:
+      and:
+        - file.hasTag("daily")
+    order:
+      - formula.Anni
+      - formula.Mesi
+      - formula.Week Link
+      - formula.Giorno
+      - lettura
+      - studio
+      - esercizi
+      - formula.Progress
+    sort:
+      - property: formula.Week Link
+        direction: DESC
+    columnSize:
+      formula.Anni: 82
+      formula.Mesi: 86
+      formula.Week Link: 115
+      formula.Giorno: 105
+      note.lettura: 103
+      note.studio: 112
+      note.esercizi: 110
+  - type: table
+    name: Log
+    filters:
+      and:
+        - file.hasTag("daily")
+    order:
+      - formula.Anni
+      - formula.Mesi
+      - formula.Week Link
+      - formula.Giorno
+      - pagine-lette
+    sort:
+      - property: formula.Week Link
+        direction: DESC
+    columnSize:
+      formula.Anni: 82
+      formula.Mesi: 86
+      formula.Week Link: 115
+      formula.Giorno: 141
+      note.pagine-lette: 129

@@ -1,0 +1,154 @@
+filters:
+  and:
+    - file.hasTag("project")
+    - '!file.folder.contains("Templates")'
+formulas:
+  Progress: |-
+    "▰".repeat ((
+    number(progresso)
+    ) 
+    / 100 * 10) + "▱▱▱▱▱▱▱▱▱▱".slice( 0, 10 - ((
+    number(progresso)
+    ) 
+    / 100 * 10).floor()).toString()
+  Untitled: |-
+    if(priorità=="Alta", "🔥",
+    if(priorità=="Media", "2️⃣", 
+    if(priorità=="Bassa", "3️⃣"
+    )))
+  Giorni rimanenti: date(scadenza).relative()
+properties:
+  note.area:
+    displayName: Aree
+  note.status:
+    displayName: Stato
+  file.ctime:
+    displayName: Data creazione
+  note.test:
+    displayName: Progress
+  note.deadline:
+    displayName: Scadenza
+  note.progress:
+    displayName: Progresso
+  formula.Untitled:
+    displayName: Priorità
+  note.scadenza:
+    displayName: Scadenza
+  note.stato:
+    displayName: Stato
+  note.priorità:
+    displayName: Priorità
+  note.progresso:
+    displayName: Progresso
+  file.name:
+    displayName: Progetti
+views:
+  - type: cards
+    name: Tutti (Cards)
+    order:
+      - file.name
+      - stato
+      - progresso
+      - formula.Progress
+      - formula.Untitled
+      - scadenza
+      - formula.Giorni rimanenti
+    sort: []
+    cardSize: 220
+    imageAspectRatio: 0.65
+    image: note.image
+    columnSize:
+      file.name: 209
+      note.stato: 87
+      note.progresso: 131
+      note.priorità: 118
+      formula.Progress: 187
+      formula.Untitled: 121
+      note.area: 137
+      note.deadline: 123
+  - type: table
+    name: Tutti
+    order:
+      - file.name
+      - stato
+      - progresso
+      - formula.Progress
+      - priorità
+      - formula.Untitled
+      - area
+      - scadenza
+      - formula.Giorni rimanenti
+    sort:
+      - property: priorità
+        direction: ASC
+    cardSize: 220
+    imageAspectRatio: 0.65
+    image: note.image
+    columnSize:
+      file.name: 209
+      note.stato: 105
+      note.progresso: 131
+      formula.Progress: 187
+      note.priorità: 118
+      formula.Untitled: 121
+      note.area: 137
+  - type: table
+    name: Attivi
+    filters:
+      and:
+        - stato == "Attivo"
+    order:
+      - file.name
+      - stato
+      - scadenza
+      - formula.Giorni rimanenti
+      - progresso
+      - formula.Progress
+    sort: []
+    columnSize:
+      file.name: 365
+      note.stato: 136
+      formula.Giorni rimanenti: 141
+      note.progresso: 131
+      formula.Progress: 174
+  - type: table
+    name: Non attivi
+    filters:
+      and:
+        - '!stato.containsAny("Attivo", "Completato")'
+    order:
+      - file.name
+      - stato
+      - scadenza
+      - progresso
+      - formula.Progress
+      - tags
+    sort: []
+    columnSize:
+      file.name: 364
+      note.stato: 136
+      note.progresso: 147
+      formula.Progress: 174
+  - type: table
+    name: Completati
+    filters:
+      and:
+        - stato.containsAny("Completato")
+    order:
+      - file.name
+      - stato
+      - progresso
+      - formula.Progress
+      - scadenza
+      - formula.Giorni rimanenti
+      - tags
+    sort: []
+    columnSize:
+      file.name: 206
+      note.status: 130
+      note.Fatto: 117
+      note.deadline: 123
+      note.progress: 95
+      formula.Progress: 185
+      note.area: 151
+      file.ctime: 159
